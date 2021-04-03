@@ -1,0 +1,166 @@
+.opis{
+	margin-left: 8vw;
+	margin-right: 8vw;
+	margin-top: 8vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+.uploo{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.descr{
+	margin: 1vw;
+	margin-bottom: 3vw; 
+	display: flex;
+	justify-content: space-around;
+
+}
+.txt{
+	flex-direction: column;
+}
+.Title{
+	font-size: 7vw;
+	text-align: center;
+	margin-bottom: 3vw;
+
+	color: #FFF;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid #003;
+	margin-bottom: 1px;
+	width: 40vw;
+	height: 8vw;	
+}
+.subs{
+	font-size: 5vw;
+	word-wrap: break-word;
+	text-align: center;
+
+	color: #FFF;
+	border: none;
+	background-color: #3E3E3E;
+	border-bottom: 2px solid #003;
+	margin-bottom: 1px;
+	width: 40vw;
+	height: 15vw;	
+}
+h3{
+	word-wrap: break-word;
+}
+.imgClass{
+	margin-right: 20vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.letsGo{
+	justify-content: center;
+}
+.title_img{
+	width: 40vw;
+	height: 52vw;
+	border-radius: 2vw 2vw 2vw 2vw;
+}
+.down{
+	width: 5vw;
+	height: 5vw;
+}
+.forma{
+	margin: 10vw;
+}
+.dis{
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn{
+	display: flex;
+	margin-bottom: 2vw;
+	margin-top: 2vw;
+	justify-content: center;
+}
+
+.but{
+	background-color:#444;
+	font-size: 5vw;
+	border: 10px solid #444;
+	border-radius: 10px;
+	text-decoration: none;
+	color: #0F8FFF;
+	box-shadow: 0 0 10px #123;
+}
+
+
+@media (max-height: 550px){
+.uploo{
+	flex-direction: column;
+	justify-content: space-between;
+}
+.opis{
+	margin-top: 2vw;
+}
+.forma{
+	margin: 1vw;
+}
+
+.title_img{
+	width: 30vw;
+	height: 36vw;
+}
+.Title{
+	font-size: 6vw;
+
+	width: 40vw;
+	height: 7vw;	
+}
+.subs{
+	font-size: 4vw;
+
+	width: 40vw;
+	height: 15vw;	
+}
+.but{
+	font-size: 4vw;
+}
+}
+
+@media (min-width: 1000px){
+.forma{
+	margin: 1vw;
+}
+.uploo{
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.title_img{
+	width: 22vw;
+	height: 24vw;
+}
+.Title{
+	font-size: 3vw;
+
+	width: 25vw;
+	height: 5vw;	
+}
+.subs{
+	font-size: 2vw;
+	word-wrap: break-word;
+	width: 25vw;
+	height: 7vw;	
+}	
+.but{
+	font-size: 2vw;
+}
+.opis{
+	margin-top: 2vw;
+	justify-content: space-around;
+}
+.dis{
+	margin-left: 2vw;
+}
+}

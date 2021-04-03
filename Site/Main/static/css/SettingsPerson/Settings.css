@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin-left:1vw;
+	margin-right:1vw;
+	color:#006AFF;
+	font-size: 5vh;
+
+}
+body{
+	background-color: #555555;	
+}
+
+.sett{
+	flex-grow: 1;
+}
+.homeBTN1{
+	margin-right: 1vw;
+	height: 6.3vh;
+}
+.mainBody{
+	text-align: center;
+}
+.head{
+}
+.set1{ 
+	padding-top: 2vh;
+	text-decoration: none;
+}
+.homeBTN1:hover{
+	opacity: .3;
+}
+@media (max-height: 550px){
+p{
+	font-size: 5vw;
+}
+}

@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/CheckTitle/Check_ContenT.css" %}">
+{%endblock %}
+
+
+			{% block title %}{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+		<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}"></a>
+		<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>					
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+		<div class="content_img">
+		<img class="content_img_main" src="{% static "img/1.jpg" %}">
+		<img class="content_img_main" src="{% static "img/1.jpg" %}">
+		<img class="content_img_main" src="{% static "img/1.jpg" %}">
+		<img class="content_img_main" src="{% static "img/1.jpg" %}">
+		</div>
+		<div class="btn">
+			<a href="" class="but"> Следуйщая глава </a>
+		</div>
+	{% endblock body %}
+

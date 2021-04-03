@@ -1,0 +1,110 @@
+.filtr{
+	display: flex;
+	flex-direction: row;
+	z-index: 50;
+	position: absolute;	
+	margin-left: 75vw;
+}
+.conten{
+	border-radius: 0vw 0vw 0vw 2vw;
+	background-color: gray;
+	width: 25vw;
+	display: flex;
+	font-size: 3vw;
+	flex-direction: column;
+}
+.filtr{
+	display: none;
+	position: absolute;
+}
+.lol{
+	font-size: 5vw; 
+}
+.llll{
+	flex-grow: 0.6;
+}
+.filtr3{
+	flex-grow: 0.4;
+}
+.blo{
+	display: flex;
+	border-radius: 0vw 0vw 1vw 1vw;
+	background-color: #6F6F6F;
+}
+
+.label{
+	display: flex;
+	margin:1vw;
+	font-size: 2vw;
+	justify-content: center;
+}
+
+.text{
+	text-decoration: none;
+	color: #323232; 
+}
+.text:hover{
+	color: #FFF; 
+}
+.label1{
+	border-radius: 0vw 0vw 1vw 1vw;
+	background-color: #6F6F6F;
+	font-size: 2.5vw;
+}
+
+
+#checkbox{
+	margin: auto;
+	margin-left: 0;
+	margin-right: 0;
+}
+.fil{
+	font-size: 2vw;
+	color: #000;
+}
+.sort{
+	font-size: 3vw;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #323232;
+}
+@media (max-width: 1024px){
+	.label1{
+	font-size: 6vw;
+	}
+	.filtr{
+		margin-left: 60vw;
+	}
+
+	.conten{
+		width: 40vw;
+	}
+	.label{
+	font-size: 5vw;
+}
+}
+@media (max-height: 500px){
+	.filtr{
+		margin-left: 50vw;
+	}
+
+	.conten{
+		width: 50vw;
+	}
+
+}
+@media (max-width: 499px){
+	.label{
+	font-size: 10vw;
+	}
+	.label1{
+	font-size: 12vw;
+	}
+	.filtr{
+		margin-left: 25vw;
+	}
+
+	.conten{
+		width: 75vw;
+	}
+}

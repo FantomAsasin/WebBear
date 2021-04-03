@@ -1,0 +1,42 @@
+{% extends 'main.html' %}
+
+
+{% load static %}
+	{% block cssLink %}
+		<link rel="stylesheet" type="text/css" href="{% static "css/SettingsPerson/Register.css" %}">
+	{% endblock %}
+
+
+
+	{% block title %}Регистрация{% endblock title %}
+
+
+
+{% load static %}
+	{% block panel %}
+
+						<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}"></a>
+						<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}" ></a>
+
+	{% endblock panel %}
+
+
+
+{% load static %}
+	{% block body %}
+	<center>
+	<div class="send">
+		<center><h1 class="reg">Регистрация</h1></center>
+		<form class="login">
+			<center><input type="text" placeholder="Логин" class="login_in" maxlength="20"></center>
+		</form>
+		<form action="" class="pass">
+			<center><input type="password" class="pass_in" placeholder="Пароль" maxlength="20"></center>
+		</form>
+		<form action="" class="pass">
+			<center><input type="password" class="pass_in" placeholder="Повторите пароль" maxlength="20"></center>
+		</form>
+		<center><input value="Зарегестрироваться" type="button" class="but"></center>
+	</div>
+	</center>
+	{% endblock body %}

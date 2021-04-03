@@ -1,0 +1,60 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}
+<link rel="stylesheet" type="text/css" href="{% static "css/CheckTitle/Content.css" %}">
+<link rel="stylesheet" type="text/css" href="{% static "css/CheckTitle/filtration.css" %}">
+{%endblock %}
+
+
+			{% block title %}Контент{% endblock title %}
+
+
+
+{% load static %}
+	{% block brg %}
+		<div class="filtr" id="filtr">
+					<div class="conten" id="qwer">
+						<div class="blo">
+							
+							<div class="filtr3"><a class="filtr2" onClick="CheckFiltr()" id="filtr1"><img class="filtr1" src="{% static "img/Filtr.png" %}"	></a></div>
+						<div class="llll">
+							<p class="sort">Сортировка</p>
+						</div>
+
+						</div>
+					<center><div class="txt">
+						
+				<div class="label"><input type="checkbox" name="" id="checkbox"><p class="fil">123456</p></div>
+
+						<div class="label1"><a href="" class="text">Выбрать</a></div>
+						
+					</div></center>
+					</div>
+				</div>
+	{% endblock %}
+
+
+
+{% load static %}
+	{% block panel %}
+<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}"	></a>
+<input class="input" type="text" maxlength="50">
+<a class="filtr2" onClick="CheckFiltr()" id="filtr1"><img class="filtr1" src="{% static "img/Filtr.png" %}"	></a>
+<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>			
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+	<div class="content">
+		<div class="bl">
+			<a class="img" href="{% url 'Page_Title' %}"><img class='img' src='{% static 'img/1.jpg' %}' ></a>
+			<center><p>15</p></center>
+		</div>
+		
+	</div>
+	{% endblock body %}
+
+

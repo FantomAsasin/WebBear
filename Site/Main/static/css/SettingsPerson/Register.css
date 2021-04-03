@@ -1,0 +1,85 @@
+.send{
+	margin-top: 10vh;
+	display: flex;
+	flex-direction: column;
+	border: 10px solid #333;
+	width: 50vw;
+	height: 50vw;
+	justify-content: center;
+	border-radius: 10px;
+}
+
+.login_in{
+	flex-grow: 0.3333;
+	font-size: 5vw;
+	color: #FFF;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid #282828;
+	margin-bottom: 1px;
+	width: 45vw;
+	height: 90%;	
+	align-self: flex-end;
+}
+
+.pass_in{
+	flex-grow: 0.3333;
+	font-size: 5vw;
+	color: #FFF;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid #282828;
+	margin-bottom: 1px;
+	width: 45vw;
+	height: 90%;	
+	align-self: flex-end;
+}
+
+.but{
+	color: #000;
+	font-size: 5vw;
+	border-radius: 4px 4px 4px 4px;
+	background-color: transparent;
+	width: 45vw;	
+	justify-content: center;
+	margin-top: 1vw;
+}
+
+@media (max-height: 550px){
+	.but{
+		width: 30vw;
+		font-size: 3vw;
+	}
+	.pass_in{
+		width: 30vw;
+		font-size: 3vw;
+	}
+	.login_in{
+		width: 30vw;
+		font-size: 3vw;
+	}
+	.send{
+		margin-top: 5vh;
+		width: 35vw;
+		height: 35vw;
+	}
+}
+@media (min-width: 1025px){
+	.but{
+		width: 15vw;
+		font-size: 1.5vw;
+	}
+	.pass_in{
+		width: 15vw;
+		font-size: 1.5vw;
+	}
+	.login_in{
+		width: 15vw;
+		font-size: 1.5vw;
+	}
+	.send{
+		margin-top: 20vh;
+		width: 20vw;
+		height: 20vw;
+	}	
+}

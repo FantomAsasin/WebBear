@@ -1,0 +1,59 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/CheckTitle/Page_Title.css" %}">
+{%endblock %}
+
+
+			{% block title %}Просмотр контента{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+		<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}" ></a>
+		<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>			
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+		<div class="opis">
+			<div class="imgJan">
+				
+				<div class="imgClass">
+				<a class="letsGo" href="{% url 'Chapters' %}"><img src="{% static "img/1.jpg" %}" class="title_img"></a>
+				</div>
+
+				<div class="janrs">
+					
+					<div class="jabrsBlock">
+						<p class="janName">dpon</p>
+					</div>
+					<div class="jabrsBlock">
+						<p class="janName">iption</p>
+					</div>
+					<div class="jabrsBlock">
+						<p class="janName">deion</p>
+					</div>
+					<div class="jabrsBlock">
+						<p class="janName">desion</p>
+					</div>
+					<div class="jabrsBlock">
+						<p class="janName">description</p>
+					</div>
+					<div class="jabrsBlock">
+						<p class="janName">description</p>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="txt">
+				<h1 class="Title">Title</h1>
+				<p class="subs">qwdmqw kdq w o dnq wodnqo wjdnoqwj dboq w j d boq wjbdoqj wdbojqw 0000000000000000000000000000000000000000000000000000000000 bdojqwbdo 0000000000000000000000000000000000000000</p>
+			</div>
+		</div>
+	{% endblock body %}
+
+
+

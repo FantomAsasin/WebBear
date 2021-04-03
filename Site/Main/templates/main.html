@@ -1,0 +1,68 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{% static "css/Main/main.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "css/Main/Header.css" %}">
+	{% block cssLink %}{% endblock %}
+	<title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+	<header class="head">
+		<div class="frm">
+				<div class="burg" id="burg">
+					<div class="cont" id="qwer">
+						<div class="prof">
+							<a href="{% url 'Auto' %}"><img src="{% static "img/AVATAR.png" %}" alt="" class="userImg">
+							<div class="nameRole"></a>
+								<H2 class="name">Name</H2>
+								<h2 class="role">Role</h2>
+							</div>
+							<div class="men"><a class="men" onClick="CheckMenu()"><img class="menu" src="{% static "img/menu.png" %}"></a></div>
+						</div>
+						<ul class="list">
+							<a class="aLists" href="{% url 'Home' %}"><li class="lists">Главная</li></a>
+							<a class="aLists" href="{% url 'Home' %}"><li class="lists">Мои тайтлы</li></a>
+							<a class="aLists" href="{% url 'UPload_content' %}"><li class="lists">Создателям</li></a>
+							<a class="aLists" href=""><li class="lists">Пожертвования</li></a>
+						</ul>
+					</div>
+				</div>
+				<div class="panel">
+						<a class="menu" onClick="CheckMenu()"><img class="menu" src="{% static "img/menu.png" %}"	></a>
+					<div class="oo" id="oo">
+						{% block panel %}{% endblock %}
+					</div>
+				</div>
+				{% block brg %}{% endblock %}
+				<script>
+					var a = false;
+					var b = false;
+					function CheckMenu(){ 
+						if (a == true){
+							document.getElementById("burg").style.display="none";
+							return a = false;
+						}
+						else{
+							document.getElementById("burg").style.display="flex";
+							return a = true;	
+						}
+					}
+					function CheckFiltr(){
+						if(b == true){
+							document.getElementById("filtr").style.display="none";
+							return b = false;
+						}
+						else{
+							document.getElementById("filtr").style.display="flex";
+							return b = true;
+						}
+					}
+				</script>
+		</div>
+	</header>
+	{% block body %}{% endblock %}
+</body>
+</html>

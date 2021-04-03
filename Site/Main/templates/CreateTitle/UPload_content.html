@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/CreateTitle/UPload_co.css" %}">
+{%endblock %}
+
+
+			{% block title %}Контент{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+		<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}" ></a>
+		<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+		<div class="opis">
+			<div class="descr">
+				<center><h3>Описание ошибок Описание ошибок Описание ошибок Описание ошибок Описание ошибок Описание ошибок Описание ошибок Описание ошибок Описание ошибок </h3></center>
+			</div>
+			<div class="uploo">
+				<div class="iMg">
+					<div class="imgClass">
+						<a class="letsGo" href=""><img src="{% static "img/sqw1.png" %}" class="title_img"></a>
+						<h3><center>Добавьте <br> обложку</center></h3>
+					</div>
+				</div>
+				<div class="txt">
+					<form action="" class="forma">
+						<input type="text" class="Title" placeholder="Название" maxlength="30">
+					</form>
+					<form class="forma">
+						<input type="" class="subs" placeholder="Описание" maxlength="200">
+					</form>
+				</div>
+			</div>
+				<div class="dis">
+						<h3><center>Жанры отбираются модератором</center></h3>
+				</div>
+				<div class="btn">
+					<a href="" class="but"> Добавить </a>
+				</div>
+		</div>		
+	{% endblock body %}

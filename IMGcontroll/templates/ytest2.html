@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}
+{%endblock %}
+
+
+			{% block title %}Test2{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+		{% for dat in data %}
+			<center><h1>{{dat.title}}</h1></center>
+			<center><img src=" {{dat.image.url}} "></center>
+		{% endfor %}
+	{% endblock body %}
+
+
+
+
+{% url 'Settings' %}
+
+

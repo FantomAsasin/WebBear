@@ -1,0 +1,232 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+p{
+	margin-left:1vw;
+	margin-right:1vw;
+	color:#FFF;
+	font-size: 5vw;
+
+}
+body{
+	background-color: #555555;	
+}
+.oo{
+	margin-left: 3vw;
+	display: flex;
+	width: 100%;
+	justify-content:space-between;
+}		
+.men{
+	display: flex;
+	margin-left: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
+.burg{
+	display: flex;
+	flex-direction: row;
+	z-index: 50;
+	position: fixed;
+}
+
+.qwer{ display: none; }
+.cont{
+	border-radius: 0vw 0vw 5vw;
+	background-color: gray;
+	width: 75vw;
+	height: 100vh;
+	display: flex;
+	font-size: 9vw;
+	flex-direction: column;
+}
+
+.prof{
+	display: flex;
+	height: 40vw;
+}
+.userImg{
+	width: 40vw;
+	height: 40vw;
+}
+.role{
+	margin-top: 6vw;
+	font-size: 8vw;
+}
+.name{
+	margin-top: 6vw;
+	font-size: 8vw;
+}
+.nameRoll{
+	display: flex;
+}
+
+.menu:hover{
+	opacity: .7;
+}
+
+.icon:hover{
+	opacity: .7;
+}
+
+.surch:hover{
+	opacity: .7;
+}
+
+.settings:hover{
+	opacity: .7;
+}
+.filtr1:hover{
+	opacity: .6;
+}
+
+
+
+.burg{
+	display: none;	
+	position: fixed;
+}
+
+
+.list{
+	flex-grow: 5;
+	display: flex;
+	flex-direction: column;
+}
+
+.lists{
+	list-style: none; 
+	margin-left: 6vw;
+	margin-top: 6vw;
+}
+
+.aLists{
+	text-decoration:none;
+	color: #282923;
+	flex-grow: 1;
+}
+.aLists:focus{
+	color: blue;
+}
+.aLists:hover{
+	color: #FF00AE;
+}
+
+.panel{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+
+@media (min-width: 1025px){
+.cont{
+	border-radius: 0vw 0vw 2vw;
+	background-color: gray;
+	width: 25vw;
+	height: 100vh;
+	display: flex;
+	font-size: 3vw;
+	flex-direction: column;
+}
+
+.prof{
+	display: flex;
+	height: 15vw;
+}
+.userImg{
+	margin-top: 1vw;
+	width: 10vw;
+	height: 10vw;
+}
+.nameRoll{
+	display: flex;
+}
+.role{
+	margin-top: 2vw;
+	font-size: 3vw;
+}
+.name{
+	margin-top: 2vw;
+	font-size: 3vw;
+}
+.lists{
+	list-style: none; 
+	margin-left: 3vw;
+	margin-top: 3vw;
+}
+.list{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 2vw;
+	}
+}
+
+
+
+@media (max-height: 500px){
+	.men{
+	margin-left: 2.5vw;
+	}
+	.frm{
+		display: flex;
+		width: 100%;
+		height: 12vh;
+		border-radius: 0px 0px 10px 10px;
+		box-shadow: 0 1px 16px #000000;
+	}
+	.menu{
+		height: 12vh;
+		flex-grow: .1;
+	}
+	.cont{
+		border-radius: 0vw 0vw 4vh;
+		background-color: gray;
+		width: 30vw;
+		height: 100vh;
+		display: flex;
+		font-size: 7vh;
+		flex-direction: column;
+	}
+	.prof{
+		display: flex;
+		height: 15vh;
+		margin-bottom: 3vh; 
+	}
+	.userImg{
+		margin-top: 1vh;
+		width: 15vh;
+		height: 15vh;
+	}
+	.nameRoll{
+		display: flex;
+	}
+	.role{
+		margin-top: 2vh;
+		font-size: 7vh;
+	}
+	.name{
+		margin-top: 2vh;
+		font-size: 7vh;
+	}
+	.lists{
+		justify-content: center;
+		list-style: none; 
+		margin-left: 3vh;
+		margin-top: 3vh;
+	}
+	.list{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 2vh;
+		}
+}

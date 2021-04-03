@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/CreateTitle/Create_Titl.css" %}">
+{%endblock %}
+
+
+			{% block title %}Добавление / Удаление{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+<a class="icon" href="{% url 'Home' %}"><img class="icon" src="{% static "img/IconCompany.png" %}"	></a>
+<a class="settings" href="{% url 'Settings' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+		<div class="create">
+			<div class="obj"><a href="" class="obj"><center><h3>Глава №1</h3></center></a></div>
+			<div class="object"><div class="box"><a href="" class="obje"><center><h3 >Добавить главу</h3></center></a></div></div>
+			<div class="object"><div class="box"><a href="" class="obje"><center><h3 >Удалить главы</h3></center></a></div></div>
+		</div>
+	{% endblock body %}

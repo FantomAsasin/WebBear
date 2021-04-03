@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+
+{% load static %}
+{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/SettingsPerson/Settings.css" %}">{% endblock %}
+
+
+{% block title %}Настройки{% endblock title %}
+
+{% load static %}
+{% block panel %}
+
+	<div class="sett"><center><p>Настройки</p></center></div>
+	<a class="homeBTN" href="{% url 'Home' %}"><img class="settings1" src="{% static "img/IconCompany.png" %}"></a>
+					
+
+{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+
+	<div class="mainBody">	
+			<div class="set1"><a href="" class="set1"><p>Аккаунт</p></a></div>
+		</div>	
+
+	{% endblock body %}

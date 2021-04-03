@@ -1,0 +1,94 @@
+.opis{
+	margin-left: 8vw;
+	margin-right: 8vw;
+	margin-top: 8vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+.txt{
+	width: 40vw;
+	flex-direction: column;
+}
+.Title{
+	font-size: 7vw;
+	text-align: center;
+	margin-bottom: 3vw;
+}
+.subs{
+	font-size: 4vw;
+	word-wrap: break-word;
+}
+.imgClass{
+	flex-direction: column;
+}
+.letsGo{
+	justify-content: center;
+}
+.title_img{
+	width: 35vw;
+	height: 52vw;
+	border-radius: 2vw 2vw 2vw 2vw;
+}
+.jabrsBlock{
+	display: flex;
+	margin-bottom: 0.5vw;
+}
+.janrs{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.janName{
+	margin-right: 0.5vw; 
+	margin-left: 0.5vw; 
+	padding: 0.5vw;
+	background-color: #222;
+	border-radius: 0.75vw 0.75vw 0.75vw 0.75vw;
+	font-size: 4vw;
+}
+.imgJan{
+	width: 35vw;
+}
+
+@media (max-height: 550px){
+.janName{
+	font-size: 4vh;
+}
+.title_img{
+	width: 24vw;
+	height: 36vw;
+}
+.Title{
+	font-size: 5vw;
+}
+.subs{
+	font-size: 3vw;
+}
+.imgJan{
+	width: 24vw;
+}
+}
+@media (min-width: 1000px){
+.title_img{
+	width: 16vw;
+	height: 24vw;
+}
+.Title{
+	font-size: 3vw;
+}
+.imgJan{
+	width: 16vw;
+}
+.subs{
+	font-size: 2vw;
+}	
+.opis{
+	justify-content: space-around;
+}
+.janName{
+	margin-right: 0.25vw; 
+	margin-left: 0.25vw; 
+	font-size: 1vw;
+}
+}

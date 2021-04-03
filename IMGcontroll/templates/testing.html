@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+
+
+
+{% load static %}{% block cssLink %}<link rel="stylesheet" type="text/css" href="{% static "css/Register.css" %}">
+{% endblock %}
+
+
+			{% block title %}Авторизация{% endblock title %}
+
+{% load static %}
+	{% block panel %}
+		<a class="icon" ><img class="icon" src="{% static "img/IconCompany.png" %}"></a>
+		<a class="settings" href="{% url 'Main' %}"><img class="settings1" src="{% static "img/settings.png" %}"></a>	
+	{% endblock panel %}
+
+
+{% load static %}
+	{% block body %}
+	<center>
+	<div class="send">
+		<center><h1 class="reg">Авторизация</h1></center>
+		<form class="login">
+			<center><input type="text" placeholder="Login" class="login_in" maxlength="20"></center>
+		</form>
+		<form action="" class="pass">
+			<center><input type="password" class="pass_in" placeholder="password" maxlength="20"></center>
+		</form>
+		<center><input value="send" type="button" class="but"></center>
+	</div>
+	</center>
+	{% endblock body %}
+
+
+
+	
